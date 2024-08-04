@@ -10,12 +10,12 @@ type Props = {};
 const Row1 = (props: Props) => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [ticker, setTicker] = useState("");
-  const {data1} = useGetKpisQuery();
+  // const {data1} = useGetKpisQuery();
   const { data, error, isLoading } = useGetNewsQuery(ticker, { skip: !ticker });
   const [postKpi] = usePostKpiMutation();
 
   const handleSearch = (term) => {
-    console.log("Console logging the infor from Db", data1);
+    // 
     setTicker(term);
   };
 
