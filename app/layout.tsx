@@ -6,7 +6,6 @@ import { ClerkProvider } from "@clerk/nextjs";
 // import { setupListeners } from "@reduxjs/toolkit/query";
 import {api} from "../app/state/api";
 import "./globals.css";
-import {store} from "./store/store"
 import { Providers } from "./store/provider";
 
 const inter = Inter({ subsets: ["latin"] });
