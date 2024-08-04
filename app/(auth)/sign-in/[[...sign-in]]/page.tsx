@@ -17,7 +17,7 @@ export default function Page() {
 
 
   // Handle form submission
-  const handleSubscribe = async (event) => {
+  const handleSubscribe = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
       // Use the mutation to send the email to the backend
