@@ -18,22 +18,22 @@ export const Header = (props: Props) =>{
     const [ticker, setTicker] = useState("");
 
     const [postKpi] = usePostKpiMutation();
-    const { data, error, isLoading } = useGetNewsQuery(ticker, { skip: !ticker });
+    // const { data, error, isLoading } = useGetNewsQuery(ticker, { skip: !ticker });
 
-    const handleSearch = (term: string) => {
-        console.log("Search term from Header:", term);
-        setTicker(term); // This is where you set the ticker
-        console.log("Search term from Header:", data);
-    };
+    // const handleSearch = (term: string) => {
+    //     console.log("Search term from Header:", term);
+    //     setTicker(term); // This is where you set the ticker
+    //     console.log("Search term from Header:", data);
+    // };
     
-      useEffect(() => {
-        if (data && data.feed.length > 0) {
-          const foundItem = data.feed.find(item =>
-            item.ticker_sentiment.some(tickerObj => tickerObj.ticker === ticker)
-          );
-          setSelectedItem(foundItem);
-        }
-      }, [data, ticker]);
+      // useEffect(() => {
+      //   if (data && data.feed.length > 0) {
+      //     const foundItem = data.feed.find(item =>
+      //       item.ticker_sentiment.some(tickerObj => tickerObj.ticker === ticker)
+      //     );
+      //     setSelectedItem(foundItem);
+      //   }
+      // }, [data, ticker]);
 
     return (
         <header className="bg-gradient-to-b from-blue-700 to-blue-500 px-4 py-8 lg:px-14 pb-36">

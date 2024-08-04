@@ -7,7 +7,7 @@ type props = {
 const DashboardLayout = ({ children }: props) => {
   return (
     <> 
-      <Header/>
+      {/* <Header/> */}
     
       <main className="px-3 lg:px-14  bg-slate-200">{children}</main>
     </>
