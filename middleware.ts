@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { auth, clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
-import { request } from "http";
 
 
 const isProtectedRoute = createRouteMatcher([

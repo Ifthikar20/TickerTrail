@@ -21,7 +21,7 @@ export default function Page() {
     event.preventDefault();
     try {
       // Use the mutation to send the email to the backend
-      const data = await postEmailForSubscribe({ email }).unwrap();
+      //const data = await postEmailForSubscribe({ email }).unwrap();
       const dataformessage = await PostEmailForMessage({ email }).unwrap();
       // Update the response message and show success animation
       setResponseMessage("You are successfully waitlisted for the most exciting stock news!");
