@@ -23,7 +23,7 @@ export const api = createApi({
     }),
     postEmailForSubscribe: build.mutation({
       query: (userEmail) => ({
-        url: 'kpi/kpis/subscribe',
+        url: '/https://tt-server-two.vercel.app/kpi/kpis/subscribe',
         method: 'POST',
         body: userEmail,
       }),
@@ -31,7 +31,7 @@ export const api = createApi({
     }),
     postEmailForMessage: build.mutation({
       query: (userEmail) => ({
-        url: '/send-email',
+        url: 'https://tt-server-two.vercel.app/send-email',
         method: 'POST',
         body: userEmail,
       }),
